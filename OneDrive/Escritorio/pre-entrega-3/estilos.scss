@@ -22,12 +22,13 @@ $fondoshop1: rgb(84, 177, 221);
     display: grid;
     grid-template-rows: 120px;
     grid-template-columns: 1fr;
-    background-color: $color1;
+    background-image: linear-gradient($fondoshop1, rgb(208, 105, 208), rgb(228, 140, 228));
     width: auto;
     justify-items: center;
     align-items: center;
     
 }
+
 .navbar-brand img{
     height: 40px;
 }
@@ -45,7 +46,7 @@ main{
     grid-template-columns: 1fr;
     grid-template-rows: 400px;
     align-items: center;
-
+    
 }
 .item, h3{
     font-family: $fontbody;
@@ -196,6 +197,21 @@ main{
     .item img{
         width: 250px;
         height: 300px;
+    }
+    .btn-custom {
+        background-color: #b673cc; 
+        color: #FFFFFF;
+        border: 2px solid #292828; 
+        text-align: center;
+    }
+    .btn-custom p{
+        padding-top: 8px;
+    }
+    
+    .btn-custom:hover {
+        background-color: #b20ca2; /* Cambia el color de fondo al pasar el mouse */
+        transform: scale(1.05);
+        
     }
 }
 

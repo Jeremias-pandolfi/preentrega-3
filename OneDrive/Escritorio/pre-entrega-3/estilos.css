@@ -9,7 +9,7 @@
   display: grid;
   grid-template-rows: 120px;
   grid-template-columns: 1fr;
-  background-color: rgba(31, 31, 209, 0.878);
+  background-image: linear-gradient(rgb(84, 177, 221), rgb(208, 105, 208), rgb(228, 140, 228));
   width: auto;
   justify-items: center;
   align-items: center;
@@ -187,6 +187,19 @@ main {
 .shop-container .item img {
   width: 250px;
   height: 300px;
+}
+.shop-container .btn-custom {
+  background-color: #b673cc;
+  color: #FFFFFF;
+  border: 2px solid #292828;
+  text-align: center;
+}
+.shop-container .btn-custom p {
+  padding-top: 8px;
+}
+.shop-container .btn-custom:hover {
+  background-color: #b20ca2; /* Cambia el color de fondo al pasar el mouse */
+  transform: scale(1.05);
 }
 
 @keyframes fadeIn {
