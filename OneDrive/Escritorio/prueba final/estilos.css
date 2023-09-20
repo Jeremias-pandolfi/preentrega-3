@@ -1,0 +1,224 @@
+@import url("https://fonts.googleapis.com/css2?family=Changa+One:ital@1&family=Courgette&family=Josefin+Sans:ital@1&family=Lilita+One&family=Nunito+Sans:opsz,wght@6..12,300&family=Unbounded&family=Ysabeau+Office:ital,wght@1,200&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#header_inicio {
+  display: grid;
+  grid-template-rows: 120px;
+  grid-template-columns: 1fr;
+  background-image: linear-gradient(rgb(84, 177, 221), rgb(208, 105, 208), rgb(228, 140, 228));
+  width: auto;
+  justify-items: center;
+  align-items: center;
+}
+
+.navbar-brand img {
+  height: 40px;
+}
+
+ul li a:hover {
+  color: rgb(148, 51, 240) !important;
+}
+
+main {
+  height: 400px;
+  max-width: 100%;
+  background-image: url(img/DELMA\ VIDRIERA.jpg);
+  background-size: cover;
+  background-position: center;
+  background-color: rgba(31, 31, 209, 0.878);
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 400px;
+  align-items: center;
+}
+
+.item, h3 {
+  font-family: "Changa One", cursive;
+}
+
+.item p {
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.container {
+  background-color: rgba(220, 220, 220, 0.536);
+  text-align: center;
+  border: solid black 1px;
+}
+.container .titulo-contenedor {
+  font-family: "Changa One", cursive;
+  font-size: 26px;
+  text-shadow: 2px white;
+}
+.container .parrafo-contenedor {
+  font-size: large;
+}
+
+.container:hover {
+  transform: scale(1.1);
+  transition: 1.1s;
+}
+
+.titulo-contenedor:hover {
+  color: rgba(31, 31, 209, 0.878);
+  transform: scale(1.1);
+}
+
+.footer-fluid {
+  background-color: rgba(23, 18, 18, 0.898);
+}
+.footer-fluid .contenedor_mapa {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 200px;
+}
+.footer-fluid iframe {
+  align-self: center;
+  justify-self: center;
+  border: 1px 2px black;
+}
+.footer-fluid iframe:hover {
+  transition: 1.1s;
+  border-radius: 80%;
+}
+.footer-fluid .icono-grande {
+  font-size: 20px;
+  color: aliceblue;
+  padding: auto;
+}
+.footer-fluid .fa-whatsapp {
+  color: rgb(30, 215, 30) !important;
+}
+.footer-fluid .fa-facebook {
+  color: rgba(31, 31, 209, 0.878);
+}
+.footer-fluid .fa-instagram {
+  color: rgb(255, 15, 15);
+}
+.footer-fluid .fa-brands:hover {
+  font-size: x-large !important;
+  transition: 0.2ms;
+}
+.footer-fluid .contactos {
+  display: grid;
+  grid-template-rows: 100px;
+  grid-template-columns: 100%;
+  justify-items: center;
+}
+.footer-fluid .lista-contactos {
+  display: flex;
+  flex-direction: column;
+}
+.footer-fluid li {
+  list-style: none;
+}
+.footer-fluid li a {
+  text-decoration: none;
+  color: black;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 18px;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .footer-fluid li a {
+    text-decoration: none;
+    color: black;
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 18px;
+  }
+}
+@media (min-width: 480px) and (max-width: 720px) {
+  .footer-fluid li a {
+    text-decoration: none;
+    color: black;
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 20px;
+  }
+}
+@media (min-width: 720px) and (max-width: 1370px) {
+  .footer-fluid li a {
+    text-decoration: none;
+    color: black;
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 22px;
+  }
+}
+
+.p-footer {
+  background-color: rgba(23, 18, 18, 0.898);
+  color: aliceblue;
+  text-align: center;
+  text-shadow: 1px 1px 2px whitesmoke;
+}
+
+.logo-copy {
+  padding-bottom: 4px;
+  padding-right: 2px;
+}
+
+/* inicio css bicicletas.html */
+.shop-container {
+  background-color: rgb(84, 177, 221);
+  background-image: linear-gradient(rgb(84, 177, 221), rgb(208, 105, 208), rgb(228, 140, 228));
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out forwards;
+}
+.shop-container .item {
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+}
+.shop-container .item:hover {
+  transition: 1.1s;
+  transform: scale(0.9);
+}
+.shop-container .item img {
+  width: 250px;
+  height: 300px;
+}
+.shop-container .btn-custom {
+  background-color: #b673cc;
+  color: #FFFFFF;
+  border: 2px solid #292828;
+  text-align: center;
+}
+.shop-container .btn-custom p {
+  padding-top: 8px;
+}
+.shop-container .btn-custom:hover {
+  background-color: #b20ca2;
+  transform: scale(1.05);
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@media (min-width: 400px) and (max-width: 620px) {
+  .video-shimano {
+    width: 390px;
+    height: 280px;
+  }
+}
+@media (min-width: 300px) and (max-width: 400px) {
+  .video-shimano {
+    width: 220px;
+    height: 120px;
+  }
+}/*# sourceMappingURL=estilos.css.map */
